@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Room Scheduler</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/RoomScheduler.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/additional-methods.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+	<script type="text/javascript" src="Scripts/RoomScheduler.js"></script>
+	<script type="text/javascript" src="Scripts/app.js"></script>
+	<script type="text/javascript" src="Scripts/services.js"></script>
+	<script type="text/javascript" src="Scripts/controllers.js"></script>
+		
+	
+</head>
+<body id="pageTop" ng-app="app">
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rsCollapse">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#pageTop">Room Scheduler</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="rsCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+					
+                        <a href="#pageTop"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#aboutUsSection">About</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contactUs">Contact</a>
+                    </li>
+					<li class="">
+                        <a class="page-scroll" data-toggle="modal" href="#myModal">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+<header>
+<div class="introDesc">
+                <div class="introWelcome">Welcome To Room Scheduler!</div>
+                <div class="introHeading">The easiest room reservation system</div>
+                <a href="#building" class="page-scroll btn btn-xl">Book a room</a>
+</div>
+</header>
+<section class="building" id="building">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="sectionHeading">Building View</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a  class="buildingLink" href="floorHayden.html">
+                       <div class="buildingHoverContent">
+                               
+                            </div>
+                        <img src="Images/haydenHall.jpg" class="img-responsive" alt="Hayden Hall">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Hayden Hall</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a href="floorDodge.html" class="buildingLink">
+                       
+                        <img src="Images/dodgeHall.jpg" class="img-responsive" alt="Dodge Hall">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Dodge Hall</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a href="floorShillman.html" class="buildingLink">
+                        <img src="Images/shillmanHall.jpg" class="img-responsive" alt="Shillman Hall">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Shillman Hall</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a href="floorSnell.html" class="buildingLink">
+                        <img src="Images/snellLibrary.jpg" class="img-responsive" alt="Snell Library">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Snell Library</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a href="floorStenson.html" class="buildingLink">
+                        <img src="Images/stensonHall.jpg" class="img-responsive" alt="Stenson Hall">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Stenson Hall</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-4 buildingItem">
+                    <a href="floorCabot.html" class="buildingLink">
+                        <img src="Images/cabotHall.jpg" class="img-responsive" alt="Cabot Hall">
+                    </a>
+                    <div class="buildingCaption">
+                        <h4>Cabot Hall</h4>
+                        <p class="text-muted">Click Image to view the floor map</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="aboutUsSection" id="aboutUsSection">
+	<div class="container visible-md visible-lg">
+	<h1 class="text-center aboutUs">About Us</h1>
+            <div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-5 aboutUsTextRight">
+				<h3>Gist</h3>
+				<p>RoomScheduler is web-based so it's accessible from anywhere, anytime. It's so easy to use it doesn't require any training for the end user </p>
+				</div>
+				<div class="col-md-2 text-center">
+				<img class="img-circle imgCircleAboutUs " src="Images/images.jpg">
+				</div>
+				
+				
+				</div>
+			</div>
+			<div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-offset-5 col-md-2 text-center">
+				<img class="img-circle imgCircleAboutUs" src="Images/images.jpg">
+				</div>
+				<div class="col-md-5 aboutUsTextLeft">
+				<h3>Our Story</h3>
+				<p>Back in 2012, Boston, a place where there is more startups than anywhere on the planet, decided they're not happy with their room reservation system and decided to build their own. One that is simple, light-weight, intuitive  and efficient. That's how Room Scheduler was born. </p>
+				</div>
+				
+				
+				
+				</div>
+			</div>
+			<div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-5 aboutUsTextRight">
+				<h3>Reserve from anywhere, on any device</h3>
+				<p>Your custom RoomScheduler site works in any web browser, so your users can access it from all their devices. Booking made easy! Whether on the go or setting at their desk, availability is quickly accessible at-a-glance. Quick filtering even helps for last minute emergencies. </p>
+				</div>
+				<div class="col-md-2 text-center">
+				<img class="img-circle imgCircleAboutUs" src="Images/images.jpg">
+				</div>
+				
+				
+				</div>
+			</div>
+	</div>
+	
+	<div class="container visible-sm visible-xs">
+	<h1 class="text-center aboutUs">About Us</h1>
+            <div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-12 text-center">
+				<h3>Gist</h3>
+				<p>RoomScheduler is web-based so it's accessible from anywhere, anytime. It's so easy to use it doesn't require any training for the end user </p>
+				</div>
+				<div class="col-md-12 text-center">
+				<img class="img-circle imgCircleAboutUs" src="Images/images.jpg">
+				</div>
+				
+				
+				</div>
+			</div>
+			<div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-12 text-center">
+				<h3>Our Story</h3>
+				<p>Back in 2012, Boston, a place where there is more startups than anywhere on the planet, decided they're not happy with their room reservation system and decided to build their own. One that is simple, light-weight, intuitive  and efficient. That's how Room Scheduler was born. </p>
+				</div>
+				<div class="col-md-12 text-center">
+				<img class="img-circle imgCircleAboutUs" src="Images/img.jpg">
+				</div>
+				
+				
+				</div>
+			</div>
+			<div class="row newRow">
+                <div class="col-lg-12">
+				<div class="col-md-12 text-center">
+				<h3>Reserve from anywhere, on any device</h3>
+				<p>Your custom RoomScheduler site works in any web browser, so your users can access it from all their devices. Booking made easy! Whether on the go or setting at their desk, availability is quickly accessible at-a-glance. Quick filtering even helps for last minute emergencies. </p>
+				</div>
+				<div class="col-md-12 text-center">
+				<img class="img-circle imgCircleAboutUs" src="Images/img1.jpg">
+				</div>
+				
+				
+				</div>
+			</div>
+	</div>
+	</section>
+<section class="team" id="team">
+<div class="container">
+<div class="col-lg-12 text-center teamHeading">
+                    <h2 class="sectionHeading">Our Amazing Team</h2>
+                   
+                </div>
+				
+                <div class="col-sm-4 col-md-offset-4 col-md-4 col-lg-4">
+                    <div class="teamMember">
+                        <img src="Images/simi.jpg" class="img-responsive img-circle" alt="Foss Simi">
+                        <h4 class="text-center">Foss Simi</h4>
+                        <p class="text-muted text-center">Lead Designer</p>
+                        <ul class="list-inline socialButtons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/simi.foss?fref=ts"><i class="fa fa-facebook-official"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/simi-foss-9516a9a4"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                			
+            </div>
+
+</section>
+<Section class="contactUs" id="contactUs">
+<div class="container"  ng-controller="contactUsCtrl">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<h1 class="lblContactUs text-center">CONTACT US</h1>
+</div>
+<form id="contactInfo">
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="form-group">
+      <label for="name1">Name:</label>
+      <input type="text" class="form-control" name="name1" id="name1" placeholder="Enter Name" ng-model="contactUs.name">
+    </div>
+<div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" ng-model="contactUs.email">
+    </div>
+    <div class="form-group">
+      <label for="contactNo">Contact Number:</label>
+      <input type="number" class="form-control" name="contactNo" id="contactNo" placeholder="Enter Contact Number" ng-model="contactUs.contactNumber">
+    </div>
+	</div>
+	<div class="col-md-6 col-sm-6">
+	<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" name="comment" rows="12" id="comment" ng-model="contactUs.comment"></textarea>
+</div>
+	</div>
+    </div>
+	<div class="row text-center">
+	<button class="btn btn-lg btnSumbit" ng-Click="contactUsValidate(this)">Submit</button>
+	</div>
+</form>
+</div>
+</section>
+
+<div id="myModal" class="modal fade-scale" role="dialog"  ng-controller="registerCtrl">
+
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>&nbsp; Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+		<div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" class="form-control" id="firstName" ng-model="register.firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input type="text" class="form-control" id="lastName"  ng-model="register.lastName">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email"  ng-model="register.email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Enter Password: <small>Password should be minimum of 6 characters</small></label>
+    <input type="password" class="form-control" id="pwd" ng-model="register.password">
+  </div>
+  <div class="form-group">
+    <label for="pwd1">Re-enter Password:</label>
+    <input type="password" class="form-control" id="pwd1" ng-model="register.confirmPassword">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> I accept terms and conditions</label>
+  </div>
+  <button type="submit" class="btn btn-warning btn-lg" ng-Click="registerUser($register)">Sign Up</button>
+</form>
+      </div>
+	  <div class="modal-footer">
+	  Already Reqistered? <a data-toggle="modal" data-dismiss="modal" href="#myNewModal">Login</a>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="myNewModal" class="modal fade" role="dialog" ng-controller="loginCtrl">
+
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><span class="glyphicon glyphicon-log-in"></span>&nbsp; Login</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" ng-model="userName">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" ng-model="password">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-warning btn-lg"  ng-Click="validateAndSubmitForm(this)">Login</button>
+</form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+ <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <span class="copyright">Copyright © Your Website 2016</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <ul class="list-inline socialButtons">
+                        
+                        <li><i class="fa fa-facebook-official fa-lg"></i>
+                        </li>
+                        <li><i class="fa fa-linkedin fa-lg"></i>
+                        </li>
+						<li><i class="fa fa-twitter fa-lg"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <ul class="list-inline privacyTerms">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a>
+                        </li>
+                        <li>Terms of Use
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

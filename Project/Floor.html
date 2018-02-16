@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Room Scheduler</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/RoomScheduler.css">
+	<script type="text/javascript" src="Scripts/RoomScheduler.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+	
+	
+</head>
+<body id="pageTop">
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rsCollapse">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="home.html">Room Scheduler</a>
+            </div>
+          </div>
+    </nav>
+<section class="floorView" id="haydenHallFloorView">
+<div class="container">
+<div class="row">
+<div class="col-md-12 floorViewContainer">               
+  <table class="haydenFloorViewTable">
+    <tbody>
+      <tr class= "harow1">
+        <td id="hacol11"></td>
+        <td id="hacol12">12</td>
+        <td class="hacol3-8" id="hacol13">13</td>
+        <td class="hacol3-8" id="hacol14">14</td>
+		<td class="hacol3-8" id="hacol15">15</td>
+        <td class="hacol3-8" id="hacol16">16</td>
+        <td class="hacol3-8" id="hacol17">17</td>
+        <td class="hacol3-8" id="hacol18">18</td>
+		<td id="hacol19"></td>
+        
+      </tr>
+	  <tr class= "harow2">
+        <td id="hacol21"></td>
+        <td id="hacol22" colspan="7">Hallway</td>
+        <td id="hacol23">23</td>
+      </tr>
+	  <tr class= "harow3">
+        <td class="harow3col1-9" id="hacol31">31</td>
+        <td class="harow3col1-9" id="hacol32">32</td>
+        <td class="harow3col1-9" id="hacol33">33</td>
+        <td class="harow3col1-9" id="hacol34">34</td>
+		<td class="harow3col1-9" id="hacol35">35</td>
+        <td class="harow3col1-9" id="hacol36">36</td>
+        <td class="harow3col1-9" id="hacol37">37</td>
+        <td class="harow3col1-9" id="hacol38">38</td>
+		<td class="harow3col1-9" id="hacol39">39</td>
+      </tr>
+	  <tr class="hallway" id="hallway">
+	   <td id="hahallway" colspan="9">Hallway</td>
+	  </tr>
+	  <tr class= "harow4">
+        <td id="hacol41" colspan="2">Stairwells/Entrance</td>
+        <td class="harow4col2-8" id="hacol42">42</td>
+        <td class="harow4col2-8" id="hacol43">43</td>
+        <td class="harow4col2-8" id="hacol44">44</td>
+		<td class="harow4col2-8" id="hacol45">45</td>
+        <td class="harow4col2-8" id="hacol46">46</td>
+        <td class="harow4col2-8" id="hacol47">47</td>
+        <td class="harow4col2-8" id="hacol48">48</td>
+		
+      </tr>
+	  <tr class="hallway" id="hallway">
+	   <td id="hahallway" colspan="9">Hallway</td>
+	  </tr>
+	   <tr class= "harow5">
+        <td class="harow5col1-9" id="hacol51">51</td>
+        <td class="harow5col1-9" id="hacol52">52</td>
+        <td class="harow5col1-9" id="hacol53">53</td>
+        <td class="harow5col1-9" id="hacol54">54</td>
+		<td class="harow5col1-9" id="hacol55">55</td>
+        <td class="harow5col1-9" id="hacol56">56</td>
+        <td class="harow5col1-9" id="hacol57">57</td>
+        <td class="harow5col1-9" id="hacol58">58</td>
+		<td class="harow5col1-9" id="hacol59">59</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>      
+</div>
+
+</section>
+
+<section class="floorView" id="dodgeHallFloorView">
+<div class="container">
+<div class="row">
+<div class="col-md-12 floorViewContainer">               
+  <table class="dodgeFloorViewTable">
+    <tbody>
+      <tr class= "dorow1">
+        <td class="dorow1col1-9" id="docol11">51</td>
+        <td class="dorow1col1-9" id="docol12">52</td>
+        <td class="dorow1col1-9" id="docol13">53</td>
+        <td class="dorow1col1-9" id="docol54">14</td>
+		<td class="dorow1col1-9" id="docol55">15</td>
+        <td class="dorow1col1-9" id="docol56">16</td>
+        <td class="dorow1col1-9" id="docol57">17</td>
+        <td class="dorow1col1-9" id="docol58">18</td>
+		<td class="dorow1col1-9" id="docol59">19</td>
+      </tr>
+	  <tr class= "dorow2">
+        <td class="dorow2col1-9" id="docol21" colspan="9">Hallway</td>
+      </tr>
+	  <tr class= "dorow3">
+        <td  id="docol31">Entrance</td>
+        <td class="dorow3col2-9" id="docol32">52</td>
+        <td class="dorow3col2-9" id="docol33">53</td>
+        <td class="dorow3col2-9" id="docol34">14</td>
+		<td class="dorow3col2-9" id="docol35">15</td>
+        <td class="dorow3col2-9" id="docol36">16</td>
+        <td class="dorow3col2-9" id="docol37">17</td>
+        <td class="dorow3col2-9" id="docol38">18</td>
+		<td class="dorow3col2-9"id="docol39">19</td>
+      </tr>
+	  <tr class= "dorow4">
+        <td class="dorow4col1-9" id="docol41" colspan="9">Hallway</td>
+      </tr>
+	   <tr class= "dorow5">
+        <td class="dorow5col1-9" id="docol51">51</td>
+        <td class="dorow5col1-9" id="docol52">52</td>
+        <td class="dorow5col1-9" id="docol53">53</td>
+        <td class="dorow5col1-9" id="docol54">14</td>
+		<td class="dorow5col1-9" id="docol55">15</td>
+        <td class="dorow5col1-9" id="docol56">16</td>
+        <td class="dorow5col1-9" id="docol57">17</td>
+        <td class="dorow5col1-9" id="docol58">18</td>
+		<td class="dorow5col1-9" id="docol59">19</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>      
+</div>
+
+</section>
+<footer>
+ <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright © Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline socialButtons">
+                        
+                        <li><i class="fa fa-facebook-official fa-lg"></i>
+                        </li>
+                        <li><i class="fa fa-linkedin fa-lg"></i>
+                        </li>
+						<li><i class="fa fa-twitter fa-lg"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline privacyTerms">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a>
+                        </li>
+                        <li>Terms of Use
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>

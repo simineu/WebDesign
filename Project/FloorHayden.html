@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Room Scheduler</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Styles/RoomScheduler.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/additional-methods.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+	<script type="text/javascript" src="Scripts/RoomScheduler.js"></script>
+	<script type="text/javascript" src="Scripts/app.js"></script>
+	<script type="text/javascript" src="Scripts/services.js"></script>
+	<script type="text/javascript" src="Scripts/controllers.js"></script>
+		
+	
+	
+</head>
+<body id="pageTop">
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rsCollapse">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="home.html">Room Scheduler</a>
+            </div>
+          </div>
+    </nav>
+<section class="floorView" id="haydenHallFloorView">
+<div class="container">
+
+<div class="row">
+<div class="col-md-12 floorViewContainer"> 
+<div class= "floorForm">
+<h1>Book Your Room</h1>
+<form>
+	
+	<div class="col-md-3 col-sm-12">
+	<div class="form-group">
+  <label for="sel1">Floor Number:</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+	</div>
+	<div class="col-md-3  col-sm-12">
+	<div class="form-group">
+  <label for="sel1">Start Time:</label>
+  <select class="form-control" id="sel1">
+    <option>8am</option>
+    <option>9am</option>
+    <option>10am</option>
+    <option>11am</option>
+	<option>12pm</option>
+    <option>1pm</option>
+    <option>2pm</option>
+    <option>3pm</option>
+  </select>
+</div>
+	</div>
+	<div class="col-md-3  col-sm-12">
+	<div class="form-group">
+  <label for="sel1">End Time:</label>
+  <select class="form-control" id="sel1">
+    <option>8am</option>
+    <option>9am</option>
+    <option>10am</option>
+    <option>11am</option>
+	<option>12pm</option>
+    <option>1pm</option>
+    <option>2pm</option>
+    <option>3pm</option>
+  </select>
+</div>
+	</div>
+	<div class="col-md-3  col-sm-12">
+	<div class="form-group">
+	<label>Number of People</label>
+    <input class="form-control" id="people">
+  </div>
+  </div>
+  <button type="submit" class="btn btn-warning btn-lg pull-right btnSuccessFloor">Go</button>
+	</div>
+	
+	</form>
+              
+  <table class="haydenFloorViewTable">
+    <tbody>
+      <tr class= "harow1">
+        <td id="hacol11"></td>
+        <td id="hacol12">Room12</td>
+        <td class="hacol3-8" id="hacol13">Room13</td>
+        <td class="hacol3-8" id="hacol14">Room14</td>
+		<td class="hacol3-8" id="hacol15">Room15</td>
+        <td class="hacol3-8" id="hacol16">Room16</td>
+        <td class="hacol3-8" id="hacol17">Room17</td>
+        <td class="hacol3-8" id="hacol18">Room18</td>
+		<td id="hacol19"></td>
+        
+      </tr>
+	  <tr class= "harow2">
+        <td id="hacol21"></td>
+        <td id="hacol22" colspan="7">Hallway</td>
+        <td id="hacol23">Room23</td>
+      </tr>
+	  <tr class= "harow3">
+        <td class="harow3col1-9" id="hacol31">Room31</td>
+        <td class="harow3col1-9" id="hacol32">Room32</td>
+        <td class="harow3col1-9" id="hacol33">Room33</td>
+        <td class="harow3col1-9" id="hacol34">Room34</td>
+		<td class="harow3col1-9" id="hacol35">Room35</td>
+        <td class="harow3col1-9" id="hacol36">Room36</td>
+        <td class="harow3col1-9" id="hacol37">Room37</td>
+        <td class="harow3col1-9" id="hacol38">Room38</td>
+		<td class="harow3col1-9" id="hacol39">Room39</td>
+      </tr>
+	  <tr class="hallway" id="hallway">
+	   <td id="hahallway" colspan="9">Hallway</td>
+	  </tr>
+	  <tr class= "harow4">
+        <td id="hacol41" colspan="2">Stairwells/Entrance</td>
+        <td class="harow4col2-8" id="hacol42">Room42</td>
+        <td class="harow4col2-8" id="hacol43">Room43</td>
+        <td class="harow4col2-8" id="hacol44">Room44</td>
+		<td class="harow4col2-8" id="hacol45">Room45</td>
+        <td class="harow4col2-8" id="hacol46">Room46</td>
+        <td class="harow4col2-8" id="hacol47">Room47</td>
+        <td class="harow4col2-8" id="hacol48">Room48</td>
+		
+      </tr>
+	  <tr class="hallway" id="hallway">
+	   <td id="hahallway" colspan="9">Hallway</td>
+	  </tr>
+	   <tr class= "harow5">
+        <td class="harow5col1-9" id="hacol51">Room51</td>
+        <td class="harow5col1-9" id="hacol52">Room52</td>
+        <td class="harow5col1-9" id="hacol53">Room53</td>
+        <td class="harow5col1-9" id="hacol54">Room54</td>
+		<td class="harow5col1-9" id="hacol55">Room55</td>
+        <td class="harow5col1-9" id="hacol56">Room56</td>
+        <td class="harow5col1-9" id="hacol57">Room57</td>
+        <td class="harow5col1-9" id="hacol58">Room58</td>
+		<td class="harow5col1-9" id="hacol59">Room59</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>      
+</div>
+
+</section>
+
+<footer>
+ <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright © Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline socialButtons">
+                        
+                        <li><i class="fa fa-facebook-official fa-lg"></i>
+                        </li>
+                        <li><i class="fa fa-linkedin fa-lg"></i>
+                        </li>
+						<li><i class="fa fa-twitter fa-lg"></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline privacyTerms">
+                        <li><a href="PrivacyPolicy.html">Privacy Policy</a>
+                        </li>
+                        <li>Terms of Use
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
